@@ -1,0 +1,58 @@
+@media (max-width: 375px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15% 6%;
+  }
+  header h2 {
+    font-size: 1.5em;
+    text-align: center;
+  }
+  header p {
+    margin-top: 5%;
+    color: hsl(225, 20%, 60%);
+    text-align: center;
+    width: 65%;
+  }
+  body .box {
+    width: 90%;
+  }
+  body .box .boxTop {
+    width: 75%;
+    flex-direction: column;
+  }
+  body .box .boxTop .modifierValue {
+    display: flex;
+    align-items: center;
+  }
+  body .box .boxTop .modifierValue h2 {
+    font-size: 3em;
+  }
+  body .box .planos {
+    align-items: center;
+    width: 90%;
+  }
+  body .box .planos p {
+    white-space: nowrap;
+    font-size: 12px;
+  }
+  body .box .planos span {
+    padding: 3.5px 3px;
+    white-space: nowrap;
+    font-size: 7px;
+  }
+  .bottomBox {
+    flex-direction: column;
+  }
+  .bottomBox .informacoes p {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .bottomBox .letsStart button {
+    margin-top: 20px;
+  }
+  [type="range"] {
+    width: 90%;
+  }
+}

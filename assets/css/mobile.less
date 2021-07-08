@@ -1,0 +1,77 @@
+// Primárias
+@SoftCyan: hsl(174, 77%, 80%);
+@StrongCyan: hsl(174, 86%, 45%);
+@LightGrayishRed: hsl(14, 92%, 95%);
+@LightRed: hsl(15, 100%, 70%);
+@PaleBlue: hsl(226, 100%, 87%);
+// Neutro
+@VeryPaleBlue: hsl(230, 100%, 99%);
+@LightGrayishBlue: hsl(224, 65%, 95%);
+@LightGrayishBlue: hsl(223, 50%, 87%);
+@GrayishBlue: hsl(225, 20%, 60%);
+@DarkDesaturatedBlue: hsl(227, 35%, 25%);
+
+@media (max-width: 375px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15% 6%;
+    h2 {
+      font-size: 1.5em;
+      text-align: center;
+    }
+    p {
+      margin-top: 5%;
+      color: @GrayishBlue;
+      text-align: center;
+      width: 65%;
+    }
+  }
+  body .box {
+    width: 90%;
+
+    .boxTop {
+      width: 75%;
+      flex-direction: column;
+      .modifierValue {
+        display: flex;
+        align-items: center;
+        h2 {
+          font-size: 3em;
+        }
+      }
+    }
+    .planos {
+      align-items: center;
+      width: 90%;
+
+      p {
+        white-space: nowrap;
+        font-size: 12px;
+      }
+      span {
+        padding: 3.5px 3px;
+        white-space: nowrap;
+        font-size: 7px;
+      }
+    }
+  }
+  .bottomBox {
+    flex-direction: column;
+    .informacoes {
+      p {
+        margin-bottom: 10px;
+        text-align: center;
+      }
+    }
+    .letsStart {
+      button {
+        margin-top: 20px;
+      }
+    }
+  }
+  [type="range"] {
+    width: 90%;
+  }
+}

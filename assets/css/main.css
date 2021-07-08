@@ -1,0 +1,178 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-size: 15px;
+  font-family: 'Manrope', sans-serif;
+  background: url(../images/bg-pattern.svg) no-repeat;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2% 0 7% 0;
+}
+header h2 {
+  font-size: 2em;
+}
+header p {
+  margin-top: 1%;
+  color: hsl(225, 20%, 60%);
+}
+.box {
+  padding: 20px 0;
+  margin: 2% auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 600px;
+  background: white;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 10px 5px;
+}
+.box .boxTop {
+  width: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.box .boxTop p {
+  color: hsl(225, 20%, 60%);
+}
+.box .boxTop .modifierValue {
+  display: flex;
+  align-items: center;
+}
+.box .boxTop .modifierValue h2 {
+  font-size: 3em;
+}
+.planos {
+  display: flex;
+  margin-top: 10%;
+  justify-content: end;
+  align-items: center;
+  width: 70%;
+}
+.planos p {
+  color: hsl(225, 20%, 60%);
+}
+.planos span {
+  background: hsl(15, 100%, 70%);
+  color: #ff2600;
+  padding: 2px 3px;
+  border-radius: 50px;
+  font-size: 10px;
+  margin-left: 5px;
+}
+.planos label {
+  position: absolute;
+  height: 40px;
+  width: 120px;
+  display: block;
+  right: 0;
+  left: 0;
+  z-index: 9999;
+  cursor: pointer;
+  margin: 0 auto;
+}
+.planos input[type=checkbox]:checked ~ .switch .button {
+  position: absolute;
+  left: 27px;
+}
+.planos .switch {
+  display: block;
+  position: relative;
+  border-bottom: 1px solid #FFF;
+  border-radius: 25px;
+  background: hsl(223, 50%, 87%);
+  box-shadow: inset 0 0 10px #888888;
+  -webkit-box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.25);
+  height: 30px;
+  width: 55px;
+  margin: 0 15px;
+}
+.planos .switch .button {
+  display: block;
+  position: absolute;
+  border-top: 1px solid #FFF;
+  border-bottom: 1px solid #AAA;
+  border-radius: 100%;
+  background: #fff;
+  height: 22px;
+  width: 24px;
+  top: 3px;
+  left: 4px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.25);
+  transition: left 0.25s ease-in-out;
+  -webkit-transition: left 0.25s ease-in-out;
+}
+.linha {
+  margin: 30px 0;
+  width: 100%;
+  height: 1px;
+  background: #ccc;
+}
+.bottomBox {
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+  align-items: center;
+}
+.bottomBox .informacoes p {
+  color: hsl(225, 20%, 60%);
+}
+.bottomBox .letsStart button {
+  border-radius: 25px;
+  border: none;
+  padding: 15px 50px;
+  color: #fff;
+  cursor: pointer;
+  background: hsl(227, 35%, 25%);
+  font-weight: 900;
+}
+.bottomBox .letsStart button:hover {
+  color: hsl(227, 35%, 25%);
+  border: 1px solid hsl(227, 35%, 25%);
+  background: transparent;
+}
+[type="range"] {
+  margin-top: 5%;
+  appearance: none;
+  background: hsl(174, 77%, 80%);
+  border-radius: 5px;
+  width: 450px;
+  height: 10px;
+}
+[type="range"]::-moz-range-thumb {
+  appearance: none;
+  background: url(../images/icon-slider.svg) no-repeat center hsl(174, 86%, 45%);
+  height: 40px;
+  width: 40px;
+  border-radius: 50px;
+  box-shadow: 0px 10px 20px hsl(174, 86%, 45%);
+  cursor: grab;
+}
+[type="range"]::-moz-range-thumb:active {
+  cursor: grabbing;
+}
+[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+  background: url(../images/icon-slider.svg) no-repeat center hsl(174, 86%, 45%);
+  height: 40px;
+  width: 40px;
+  border-radius: 50px;
+  box-shadow: 0px 10px 20px hsl(174, 86%, 45%);
+  cursor: grab;
+}
+[type="range"]::-webkit-slider-thumb:active {
+  cursor: grabbing;
+}
+input[type=checkbox] {
+  position: absolute;
+  visibility: hidden;
+}
+input#toggle[type=checkbox] {
+  display: none;
+}
